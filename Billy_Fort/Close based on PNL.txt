@@ -1,0 +1,15 @@
+I do not need a full trading bot. I only want a python script that monitors my interactive brokers open positions and will auto-close the position if the unrealized gain is negative x amount. I will need to be able to configure the x amount in a text tile or manually set it from command line. I will also need the source code.
+
+here is an example:
+I manually make 3 positions:
+AAPL 100 shares at $200
+NVDA 200 shares at $500
+TSLA 150 shares at $1000
+
+When any position is -$1000 or less than -1000 (-1001) the python script should only close that position.
+
+So if TSLA is -$1000 in unrealized then the script would only close that position.
+
+The if the other positions are greater than -1000 in unrealized gains then leave them alone.
+
+The -1000 is just the example and I want to be able to configure that amount manually.
